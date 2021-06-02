@@ -34,6 +34,8 @@ export default class MyDocument extends Document {
       <Html lang="pt-BR">
         <Head>
           <meta name="description" content="App Movies Version 2.0.0" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
           <link rel="icon" href="/favicon.ico" />
           <link rel="manifest" href="../../manifest.json" />
         </Head>
