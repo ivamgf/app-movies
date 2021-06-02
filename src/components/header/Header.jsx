@@ -1,15 +1,18 @@
 import React, { Component }  from 'react';
+import Navbar from '../navbar/Navbar';
 
 class Header extends Component {
     render() {
         return (
         
         <div>
-          <h1>Header</h1>
+            <header id="main-header">
+                 <Navbar />
+            </header> 
         </div>
       );
     }
     
   }
   
-  export default Header;
+export default Header;

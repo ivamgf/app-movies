@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
-import Home from '../components/home/Home';
+import Home from './home/Home';
 import Head from 'next/head';
 import styled from 'styled-components';
 
