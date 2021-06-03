@@ -1,11 +1,14 @@
 import React, { Component }  from 'react';
+import Footerbar from '../footerbar/Footerbar';
 
 class Footer extends Component {
     render() {
         return (
         
         <div>
-          <h1>Footer</h1>
+          <footer id="main-footer">
+                 <Footerbar />
+          </footer> 
         </div>
       );
     }

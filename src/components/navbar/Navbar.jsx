@@ -1,5 +1,7 @@
 import React, { Component }  from 'react';
 import clsx from 'clsx';
+import { useRouter } from 'next/router';
+
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -17,8 +19,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MailIcon from '@material-ui/icons/Mail';
 import HomeIcon from '@material-ui/icons/Home';
-import PeopleIcon from '@material-ui/icons/People';
 import InfoIcon from '@material-ui/icons/Info';
+import MovieIcon from '@material-ui/icons/Movie';
 
 const drawerWidth = 240;
 
@@ -80,6 +82,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function PersistentDrawerLeft() {
+  const router = useRouter();
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -92,22 +95,6 @@ export default function PersistentDrawerLeft() {
     setOpen(false);
   };
   
-  const linkHome = () => {
-   // window.location.pathname = '/home';
-  };
-
-  const linkMovies = () => {
-  //  window.location.pathname = '/movies';
-  };
-
-  const linkAbout = () => {
-   // window.location.pathname = '/about';
-  };
-
-  const linkContact = () => {
-   // window.location.pathname = '/contact';
-  };
-
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -149,7 +136,7 @@ export default function PersistentDrawerLeft() {
         <Divider />
         <List>
           {['Home'].map((text, index) => (
-            <ListItem button key={text} onClick={linkHome}>
+            <ListItem button key={text} onClick={() => router.push('/home/Home')}>
               <ListItemIcon>
                 <HomeIcon />
               </ListItemIcon>
@@ -161,16 +148,16 @@ export default function PersistentDrawerLeft() {
         <Divider />
         <List>
           {['Movies'].map((text, index) => (
-            <ListItem button key={text} onClick={linkMovies}>
-              <ListItemIcon><PeopleIcon /></ListItemIcon>
-              <ListItemText primary={text} />
+            <ListItem button key={text} onClick={() => router.push('/movies/Movies')}>
+              <ListItemIcon><MovieIcon /></ListItemIcon>
+              <ListItemText primary={text} />              
             </ListItem>
           ))}
         </List>
         <Divider />
         <List>
           {['About'].map((text, index) => (
-            <ListItem button key={text} onClick={linkAbout}>
+            <ListItem button key={text} onClick={() => router.push('/about/About')}>
               <ListItemIcon><InfoIcon /></ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -178,7 +165,7 @@ export default function PersistentDrawerLeft() {
         </List>
         <List>
           {['Contact'].map((text, index) => (
-            <ListItem button key={text} onClick={linkContact}>
+            <ListItem button key={text} onClick={() => router.push('/contact/Contact')}>
               <ListItemIcon><MailIcon /></ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>

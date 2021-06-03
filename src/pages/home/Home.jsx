@@ -1,11 +1,18 @@
 import React, { Component }  from 'react';
 
+import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
+
+import Banner from '../../components/banner/Banner';
+
 class Home extends Component {
     render() {
         return (
         
         <div>
-          <h1>Home</h1>
+          <Header /> 
+          <Banner />
+          <Footer />    
         </div>
       );
     }
