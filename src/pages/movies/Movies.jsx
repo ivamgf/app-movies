@@ -2,14 +2,15 @@ import React, { Component }  from 'react';
 
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
+import Poster from '../../components/poster/Poster';
 
 class Movies extends Component {
     render() {
         return (
         
         <div>
-          <Header /> 
-          <h1>Movies</h1>
+          <Header />           
+            <Poster />
           <Footer />
         </div>
       );
