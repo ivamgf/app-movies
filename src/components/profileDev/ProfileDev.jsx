@@ -9,7 +9,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
-import ImgProfile from '../../../public/assets/images/dev.jpg';
+import ImgProfile from '../../../public/assets/images/dev.png';
 
 const useStyles = makeStyles({
   root: {
