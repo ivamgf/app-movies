@@ -18,7 +18,7 @@ export default function Page() {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained" color="primary" type="button" onClick={() => router.push('/movies/Movies')}>
+      <Button variant="contained" color="primary" type="button" onClick={() => router.push('/movie/Movie')}>
         Learn More
       </Button>
     </div>

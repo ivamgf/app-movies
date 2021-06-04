@@ -2,7 +2,7 @@ import React, { Component }  from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Poster2 from '../../components/poster/Poster2';
+import ImgBanner2 from '../imgbanner/Imgbanner2';
 
 const useStyles = makeStyles((theme) => ({
     heading1: {
@@ -35,7 +35,7 @@ export default function SimpleContainer() {
         <CssBaseline />
         <Container maxWidth="sm" className={classes.heading}>
             <h1 className={classes.heading1}>The Great Cinema Classics!</h1>  
-            <Poster2 />
+            <ImgBanner2 />
             <h3 className={classes.heading2}>Check out the synopses of great movies from the world cinema.</h3>
         </Container>
         </React.Fragment>

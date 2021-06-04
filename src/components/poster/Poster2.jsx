@@ -5,10 +5,9 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-import ButtonRoute2 from '../../components/button/Button2';
+import ButtonRoute from '../../components/button/Button';
 
 import ImgMovie1 from '../../../public/assets/images/avengers.jpg';
 
@@ -53,7 +52,7 @@ export default function ImgMediaCard() {
             </CardContent>
         </CardActionArea>
         <CardActions>
-            <ButtonRoute2 />
+            <ButtonRoute />
         </CardActions>
         </Card>    
     </Container>
